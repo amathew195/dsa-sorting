@@ -50,7 +50,7 @@ function mergeSort(nums) {
 }
 
 function qSort(nums) {
-  if (nums.length === 1) return nums;
+  if (nums.length <= 1) return nums;
   const pivot = nums[nums.length - 1];
   const lesser = nums.filter((n) => n < pivot);
   const equal = nums.filter((n) => n === pivot);
